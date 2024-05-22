@@ -1,0 +1,70 @@
+import React, { useState, useEffect } from 'react';
+import data from '../../data/data.json';
+import css from './InputText.module.css';
+
+function InputText() {
+    const [input, setInput] = useState('');
+    const [currentSegmentIndex, setCurrentSegmentIndex] = useState(0);
+    const [segments, setSegments] = useState([]);
+    const [currentSegment, setCurrentSegment] = useState('');
+
+    useEffect(() => {
+        const words = data.text1.split(' ');
+        const tempSegments = [];
+        for (let i = 0; i < words.length; i += 7) {
+            tempSegments.push(words.slice(i, i + 7).join(' '));
+        }
+        setSegments(tempSegments);
+        if (tempSegments.length > 0) {
+            setCurrentSegment(tempSegments[0]); // Set the first segment initially
+        }
+    }, []);
+
+    useEffect(() => {
+        if (segments.length > currentSegmentIndex) {
+            setCurrentSegment(segments[currentSegmentIndex]); // Update current segment when index or segments change
+        }
+    }, [currentSegmentIndex, segments]);
+
+    const handleInputChange = (event) => {
+        const { value } = event.target;
+        if (currentSegment && input.length < currentSegment.length) {
+            const nextCharacter = currentSegment[input.length]; // The next character user should type
+            if (value[value.length - 1] === nextCharacter) {
+                setInput(value); // Only update the input if the character is correct
+            }
+        }
+    };
+
+    const getColorizedText = () => {
+        if (!currentSegment) return; // Ensure currentSegment is not undefined
+
+        const typedText = input.split('').map((char, index) => (
+            <span key={index} style={{ color: 'blue' }}>{char}</span>
+        ));
+
+        const restText = currentSegment.slice(input.length).split('').map((char, index) => (
+            <span key={input.length + index}>{char}</span>
+        ));
+
+        return <>{typedText}{restText}</>;
+    };
+
+    return (
+        <div>
+            <div className={css.display}>
+                {getColorizedText()}
+            </div>
+            <input
+                type="text"
+                value={input}
+                onChange={handleInputChange}
+                className={css.inputField}
+                placeholder="Type here..."
+                autoFocus
+            />
+        </div>
+    );
+}
+
+export default InputText;

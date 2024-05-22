@@ -1,0 +1,40 @@
+/* InputText.module.css */
+@font-face {
+    font-family: 'B612';
+    src: url('./fonts/B612-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.display {
+    font-family: 'B612', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #333; /* Dark grey for better readability */
+}
+
+.inputField {
+    margin-bottom: 80px;
+    width: 60%; /* Responsive width */
+    padding: 12px 10px; /* Better padding */
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 5px; /* Rounded borders */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.correct {
+    color: green; /* Color for correct characters */
+}
+
+.incorrect {
+    color: red; /* Color for incorrect characters */
+    text-decoration: underline; /* Underline incorrect characters */
+}
+
+.nextCharacter {
+    color: #007BFF; /* Blue color for the next character to type */
+    font-weight: bold;
+}
+

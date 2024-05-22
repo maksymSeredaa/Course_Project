@@ -1,0 +1,57 @@
+/* Form */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Group */
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  /* Label */
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  /* Input Field */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4285f4;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2c75e5;
+  }
+  

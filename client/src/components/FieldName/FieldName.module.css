@@ -1,0 +1,37 @@
+/* FieldName.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255); /* Light background with slight transparency */
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .inputField {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 60%; /* Responsive width */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+  }
+  

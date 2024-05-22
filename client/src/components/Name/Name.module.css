@@ -1,0 +1,22 @@
+.Name {
+    position:absolute;
+    top:20px;
+    left: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4A90E2; /* Приятный синий цвет */
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для 3D эффекта */
+    text-align: center;
+    width: fit-content;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Name:hover {
+    transform: scale(1.05); /* Небольшое увеличение при наведении */
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Усиленная тень при наведении */
+  }
+  

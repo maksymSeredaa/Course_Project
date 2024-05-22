@@ -1,0 +1,26 @@
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+   
+    color: #fff; /* White text color */
+    font-size: 24px; /* Larger font size */
+  }
+  
+  .menuItem {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background for items */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .menuItem:hover {
+    background-color: #66bb6a; /* Lighter green on hover */
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+  }

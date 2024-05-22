@@ -1,0 +1,77 @@
+.keyboardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+}
+
+.key {
+    box-sizing: border-box;
+    min-width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.keySmall {
+    min-width: 40px;
+}
+
+.keyMedium {
+    min-width: 80px;
+}
+
+.keyLarge {
+    min-width: 130px;
+}
+
+.keyActive {
+    background-color: red !important;}
+    
+
+.key-indigo {
+    background-color: rgb(201, 200, 255);
+    color: rgb(44, 43, 107);
+}
+
+.key-green {
+    background-color: rgb(172, 243, 199);
+    color: rgb(23, 113, 58);
+}
+
+.key-yellow {
+    background-color: rgb(255, 235, 153);
+    color: rgb(128, 102, 0);
+}
+
+.key-mint {
+    background-color: rgb(153, 233, 229);
+    color: rgb(0, 99, 95);
+}
+
+.key-pink {
+    background-color: rgb(255, 189, 202);
+    color: rgb(130, 23, 41);
+}
+.key-grey {
+   
+    background-color: rgb(219 226 229 );
+
+    color: rgb(76 80 82 );
+}
+
+.key:hover {
+    background-color: rgba(240, 240, 240, 0.9); /* Слегка осветляет фон при наведении */
+}
+.nextChar_{
+    box-shadow: 2px 2px 2px;
+    border: 3px solid;
+    box-sizing: border-box;
+}

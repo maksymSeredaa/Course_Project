@@ -1,0 +1,52 @@
+.statisticContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.statisticContent {
+  width: 100%;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.backButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}
